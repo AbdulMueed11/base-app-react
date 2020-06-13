@@ -7,6 +7,8 @@ name: React App Deploy to Surge
 on:
   push:
     branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -36,5 +38,6 @@ jobs:
       
     - name: Install Surge
       run: npm install -g surge
+
     - name: Run Surge
-      run: surge ./ react-base-app001.surge.sh --token ${{secrets.SURGE_TOKENTEST}}
+      run: surge ./build react-base-app001.surge.sh --token ${{secrets.SURGE_TOKENTEST}}

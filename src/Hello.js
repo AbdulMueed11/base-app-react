@@ -5,7 +5,7 @@ function Hello(props) {
     return (
         <div className="Hello">
             <div className="Hello-header">
-                <strong>Assignment # 2</strong>
+                <strong>Assignment # 3</strong>
             </div>
             <div className="body-text">
                 Hi I am <strong> {props.name} </strong> age {props.age}

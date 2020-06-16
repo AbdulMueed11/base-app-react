@@ -1,0 +1,24 @@
+.Hello {
+    text-align: center;
+}
+
+.Hello-header {
+    background-color: #282c34;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(5px + 2vmin);
+    color: white;
+}
+
+.body-text{
+    /*min-height: 30vh;*/
+    margin-top: 10vh;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(5px + 2vmin);
+}
